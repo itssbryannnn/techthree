@@ -1,0 +1,170 @@
+html, h1, h2, h3, p {
+    font-family: 'Poppins', sans-serif !important;
+}
+h1{
+    font-weight: bold;
+}
+
+.org-logo{
+    height: 80px;
+    width: 80px;
+}
+
+.org-logos{
+    height: 100px;
+    width: 100px;
+}
+
+body {
+    background-image: url('wallpaper.webp'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* hearts background with gradient overlay */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.welcome {
+    width: 80%;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    position: fixed; /* Keeps the container in place */
+    top: 45%; /* Centers the container vertically */
+    left: 50%; /* Centers the container horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the position to be centered */
+}
+
+.cupid {
+    height: 100px;
+    width: 100px;
+}
+
+h1, h3, h4 {
+    color: #e60073;
+}
+
+.btn-primary {
+    background-color: #e60073;
+    border-color: #e60073;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #cc005c;
+    border-color: #cc005c;
+}
+
+.btn-success {
+    background-color: #ff66b2;
+    border-color: #ff66b2;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #e60073;
+    border-color: #e60073;
+}
+
+.valentine-title {
+    color: #ff66b2;
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.question-text{
+    display: flex;
+    text-align: center;
+}
+
+.valentine-question {
+    color: #e60073;
+    font-size: 1.5rem;
+    animation: fadeInUp 1s ease-in-out;
+    display: grid;
+    gap: 10px;
+}
+.valentine-choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.swal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999; /* or any number higher than your container's z-index */
+  }
+  
+  .swal-modal {
+    position: fixed; /* Keeps the modal in place */
+    z-index: 10000; /* Make sure the modal is on top of the overlay */
+  }
+  
+
+
+.valentine-choices button {
+    background-color: #ff66b2;
+    border-color: #ff66b2;
+    color: #fff;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+    width: 100% !important;
+
+}
+
+.valentine-choices button:hover {
+    background-color: #e60073;
+    border-color: #e60073;
+    transform: scale(1.05);
+}
+
+.valentine-timer {
+    color: #e60073;
+    font-size: 1.2rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.charcoal{
+    color: #333;
+}
