@@ -58,12 +58,39 @@ document.addEventListener("DOMContentLoaded", function () {
             choices: ["Increases power consumption", "Requires separate hardware for each OS", "Allows multiple OS to run on one host", "Reduces the number of CPU cores available"],
             answer: "Allows multiple OS to run on one host"
         },
+
+        {
+                question: "Which flower is most commonly given on valentine's day in the Philippines?",
+                choices: ["Roses", "Sunflower", "Tulips", "Daisy"],
+                answer : "Roses"
+
+        },
+
+        {
+            question: "Ïn the Philippines, what famous landmark is known for romantic walks and couples visiting on Valentines'Day?",
+            choices: ["Luneta Park", "Intramuros", "Rizal Park", "Baguio City"],
+            answer : "Luneta Park"
+        },
+
+      
    
         {
             question: "Which sensor is most commonly used in IoT applications to measure temperature?",
             choices: ["LDR", "Thermistor", "Microphone", "Accelerometer"],
             answer: "Thermistor"
         },
+
+        {
+            question: "Which of the following is the most appropriate description of an NDA?",
+            choices: [
+                "It is a specialized organization that monitors and analyzes threats to the information systems in a company.",
+                "It is a contract that makes the contracting parties agree to hold and maintain in confidence the confidential information of the other party.",
+                "It is an agreement of an objective quality standard that is concluded between a service provider and the user concerning the service provided.",
+                "It is a hierarchical decomposition of the tasks to be implemented in a project."
+            ],
+            answer: "It is a contract that makes the contracting parties agree to hold and maintain in confidence the confidential information of the other party."
+        },
+
         {
             question: "Which logic gate produces an output of 1 only when all inputs are 1?",
             choices: ["AND", "OR", "XOR", "NAND"],
@@ -145,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             question: "Globally Recogized Standard for Quality Management?",
             choices: ["ISO 9001:2015", "ISO 27001", "ISO 14001", "ISO/IEC 27001"],
-            answer: "COBIT"
+            answer: "ISO 9001:2015"
         },
         {
             question: "Which of the following are international development targets that are composed of 17 objectives set by the United Nations in order to achieve a sustainable world? ",
