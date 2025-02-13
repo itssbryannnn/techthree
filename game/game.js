@@ -180,18 +180,21 @@ document.addEventListener("DOMContentLoaded", function () {
             answer: "Sustainable Development Goals"
         }
     ];
-    
-
     let selectedQuestions = [];
     let currentQuestionIndex = 0;
     let timer;
     let timeLeft = 15;
 
     function startGame() {
-        // Select 5 random questions
-        selectedQuestions = questions.sort(() => 0.5 - Math.random()).slice(0, 5);
+        // Ensure 5 unique questions are selected each game
+        selectedQuestions = getRandomQuestions(5);
         currentQuestionIndex = 0;
         showQuestion();
+    }
+
+    function getRandomQuestions(numQuestions) {
+        const shuffledQuestions = [...questions].sort(() => 0.5 - Math.random()); // Shuffle questions
+        return shuffledQuestions.slice(0, numQuestions); // Return the first 5 questions
     }
 
     function showQuestion() {
